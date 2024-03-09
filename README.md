@@ -1,4 +1,4 @@
-# Currency-Transfer-Image-Recognition
+# Currency Transfer Image Recognition
 
 ## Abstract
 In today's digital era, there is a growing demand for efficiently calculating the total amount transferred through images captured from transaction screens. Not all banking applications offer a service that automatically sums up the amounts debited and credited to an account on a monthly basis, as exemplified by the case of BIDV. Moreover, even when such services exist, they may not extend to calculating the total amounts for specific transactions. While manual calculations are feasible, the need for automation becomes increasingly evident when dealing with a large volume of transactions.
