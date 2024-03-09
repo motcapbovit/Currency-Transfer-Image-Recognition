@@ -16,8 +16,19 @@ Label Studio serves as our labeling tool of choice, primarily because it offers 
 
 The labeling interface is illustrated below:
 
+<img width="200" alt="hinh1momo" src="https://github.com/motcapbovit/Currency-Transfer-Image-Recognition/assets/72774923/aca2fd65-c7a9-43e8-bcbb-8fd0b53b6474">   <img width="200" alt="hinh2nganhang" src="https://github.com/motcapbovit/Currency-Transfer-Image-Recognition/assets/72774923/60f2cec8-5d5c-42ff-aae1-864732d2da54">
+
+_Note: Due to the presence of sensitive information, certain areas on the images will be redacted before being displayed._
 
 ## Model Evaluation
+
+Due to the nature of this project, we did not employ multiple models for a single task and conduct comparisons. Therefore, in this section (model evaluation), I will perform error analysis. Surprisingly (or perhaps not), after training on 400 and predicting on 200 money transfer images, we encountered a notable error — despite the transaction occurring only once, the transferred amount appeared multiple times in the image.
+
+<img width="200" alt="image_0257" src="https://github.com/motcapbovit/Currency-Transfer-Image-Recognition/assets/72774923/0dfe9490-caff-4c1e-ab52-51a16a6dfbeb">
+
+Specifically, for money transfers through the Momo application, the transferred amount is typically displayed at the top of the image. However, the system subsequently presents this amount below when generating the transfer receipt. Consequently, the object detection system bifurcated these two regions into distinct images and performed OCR for each, resulting in the amount being duplicated.
+
+For future development, the incorporation of additional training data and epochs may be promising in solving this misidentification. Observating the error closely indicate a higher propensity for predicting the location above rather than below. This comes from the fact that in the majority of Momo transfer images, the transferred amount is located at the top most of the time.
 
 ## Contact
 Chi Thanh Dang
