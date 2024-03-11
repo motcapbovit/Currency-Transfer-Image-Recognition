@@ -31,6 +31,6 @@ Specifically, for money transfers through the Momo application, the transferred 
 For future development, the incorporation of additional training data and epochs may be promising in solving this misidentification. Observating the error closely indicate a higher propensity for predicting the location above rather than below. This comes from the fact that in the majority of Momo transfer images, the transferred amount is located at the top most of the time.
 
 ## Contact
-Chi Thanh Dang
+[Chi Thanh Dang](https://github.com/motcapbovit)
 
 chithanhdang74@gmail.com
